@@ -1,0 +1,12 @@
+# Definir imagem base
+FROM python:3.9
+
+# Definir diretório de trabalho
+WORKDIR /app
+
+
+# Copiar todo o código do aplicativo
+COPY . .
+
+# Definir comando para executar o main.py
+CMD [ "python", "main.py" ]
